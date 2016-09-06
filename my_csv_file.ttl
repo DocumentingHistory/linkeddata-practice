@@ -1,0 +1,15 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#>
+@prefix myfile: <http://example.org/>
+
+myfile:columnA rdf:type myfile:Column .
+myfile:columnA rdfs:label “Names” .
+myfile:columnA rdf:value myfile:A2value .
+myfile:columnA rdf:value myfile:A3value .
+myfile:A2value rdfs:label “Davis George” .
+myfile:A2value sdmx-dimension:refPeriod “1832” .
+myfile:A2value skos:relatedConcept <http://dbpedia.org/page/Horsington,_Somerset> .
+myfile:A3value rdfs:label “Hannan, Shadrach” .
+myfile:A2value skos:relatedConcept <http://dbpedia.org/page/Charlton_Horethorne> .
